@@ -30,11 +30,7 @@ public class UserSettingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.app_name));
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_user_setting);
 
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -65,12 +61,13 @@ public class UserSettingActivity extends AppCompatActivity {
         remove = (Button) findViewById(R.id.remove);
         signOut = (Button) findViewById(R.id.sign_out);
 
-        oldEmail = (EditText) findViewById(R.id.old_email);
+        oldEmail = (EditText) findViewById(R.id.old_emails);
         newEmail = (EditText) findViewById(R.id.new_email);
         password = (EditText) findViewById(R.id.password);
         newPassword = (EditText) findViewById(R.id.newPassword);
 
-        oldEmail.setVisibility(View.GONE);
+        oldEmail.setVisibility(View.VISIBLE);
+
         newEmail.setVisibility(View.GONE);
         password.setVisibility(View.GONE);
         newPassword.setVisibility(View.GONE);
@@ -85,6 +82,7 @@ public class UserSettingActivity extends AppCompatActivity {
             progressBar.setVisibility(View.GONE);
         }
 
+
         btnChangeEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,6 +96,7 @@ public class UserSettingActivity extends AppCompatActivity {
                 remove.setVisibility(View.GONE);
             }
         });
+
 
         changeEmail.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -169,6 +168,8 @@ public class UserSettingActivity extends AppCompatActivity {
                 }
             }
         });
+
+
 
         btnSendResetEmail.setOnClickListener(new View.OnClickListener() {
             @Override
