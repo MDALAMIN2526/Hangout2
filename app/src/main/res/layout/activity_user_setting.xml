@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme.AppBarOverlay"
         app:elevation="0dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -35,10 +36,11 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/old_email"
+            android:id="@+id/old_emails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_email"
