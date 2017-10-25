@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.amin2.hangout.UserSettingActivity">
+    tools:context="com.example.amin2.hangout.view.UserSettingActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="0dp"
@@ -16,6 +16,13 @@
         tools:layout_editor_absoluteX="8dp"
         tools:ignore="MissingConstraints">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -33,7 +40,7 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/old_emails"
+            android:id="@+id/old_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_email"

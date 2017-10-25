@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "721404861222-a127r7ghseeq7uvv2ogof92beb92hrkv.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.amin2.hangout",
-            "certificate_hash": "ebc9a7fcf99a8bc00d055fcce342b4e8f62fdf98"
-          }
-        },
-        {
           "client_id": "721404861222-mkqng6idfcr65207d2mcevl6bk4a8d7d.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
